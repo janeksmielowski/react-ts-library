@@ -24,10 +24,13 @@ module.exports = function(env, argv) {
                 }
             ]
         },
+        externals: {
+            'react': 'react',
+            'react-dom': 'react-dom'
+        },
         resolve: {
             alias: {
-                '@root': path.resolve(__dirname, 'src'),
-                'react': path.resolve(__dirname, 'node_modules/react'),
+                '@root': path.resolve(__dirname, 'src')
             },
             extensions: ['.js', '.jsx', '.ts', '.tsx']
         },
