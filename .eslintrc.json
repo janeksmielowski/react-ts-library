@@ -1,6 +1,8 @@
 {
     "root": true,
     "ignorePatterns": [
+      "dist/*",
+      "node_modules/*",
       "jest.config.js",
       "webpack.config.js"
     ],
