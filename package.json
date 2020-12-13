@@ -1,0 +1,79 @@
+{
+  "name": "react-ts-template",
+  "description": "React Typescript application template, with Babel, Webpack and ESLint configuration",
+  "license": "MIT",
+  "version": "0.1.0",
+  "private": true,
+  "author": "janeksmielowski",
+  "repository": "https://github.com/janeksmielowski/react-ts-template",
+  "main": "dist/index.js",
+  "dependencies": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "styled-components": "5.2.1",
+    "typescript": "4.1.2",
+    "web-vitals": "1.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.12.8",
+    "@babel/core": "7.12.9",
+    "@babel/plugin-proposal-class-properties": "7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "7.12.1",
+    "@babel/plugin-syntax-dynamic-import": "7.8.3",
+    "@babel/preset-env": "7.12.7",
+    "@babel/preset-react": "7.12.7",
+    "@babel/preset-typescript": "7.12.7",
+    "@testing-library/jest-dom": "5.11.6",
+    "@testing-library/react": "11.2.2",
+    "@types/jest": "26.0.15",
+    "@types/node": "12.0.0",
+    "@types/react": "16.9.53",
+    "@types/react-dom": "16.9.8",
+    "@types/styled-components": "5.1.4",
+    "@typescript-eslint/eslint-plugin": "4.8.2",
+    "@typescript-eslint/parser": "4.8.2",
+    "babel-loader": "8.2.2",
+    "clean-webpack-plugin": "3.0.0",
+    "copy-webpack-plugin": "6.3.2",
+    "eslint": "7.14.0",
+    "eslint-config-prettier": "6.15.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-webpack-plugin": "2.4.0",
+    "file-loader": "6.2.0",
+    "html-webpack-plugin": "4.5.0",
+    "jest": "26.6.3",
+    "prettier": "2.2.1",
+    "terser-webpack-plugin": "5.0.3",
+    "ts-jest": "26.4.4",
+    "webpack": "5.9.0",
+    "webpack-cli": "4.2.0",
+    "webpack-dev-server": "3.11.0"
+  },
+  "scripts": {
+    "build": "yarn test && yarn build:prod",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "lint:fix": "yarn lint --fix",
+    "start": "webpack serve --mode=development",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
